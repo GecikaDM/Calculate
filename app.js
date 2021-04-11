@@ -16,7 +16,7 @@ const screen = document.querySelector('.screen');
 
 document.addEventListener('keydown', (e) => {
   const value = e.keyCode.toString();
-  // console.log(value, typeof value);
+  // 2145console.log(value, typeof value);
   calculate(value);
 });
 
@@ -34,7 +34,7 @@ const calculate = (value) => {
       case '46' : 
         screen.textContent = "";
         break;
-      case '61':
+      case '13':
         const calcul = eval(screen.textContent);
         screen.textContent = calcul;
         break;
